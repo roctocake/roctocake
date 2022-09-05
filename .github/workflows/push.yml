@@ -1,4 +1,4 @@
-name:test
+name: test
 
-run on: ubuntu
-       run: test --no-build --verbosity normal
+  run on: ubuntu-latest
+       
