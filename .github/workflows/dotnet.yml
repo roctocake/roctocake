@@ -1,4 +1,4 @@
-name: .NET
+name: .NET-6
 
 on:
   push:
@@ -17,8 +17,8 @@ jobs:
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: 6.x.x
-    - name: Dependencies
-      run: dotnet dependencies --no-dependencies 
+    - name: _Dependencies
+      run: dotnet.sh/temp/ --no-dependencies 
     - name: Build
       run: dotnet build --configuration Release
     - name: Test
