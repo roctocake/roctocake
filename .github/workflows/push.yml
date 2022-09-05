@@ -1,12 +1,4 @@
-name: CI 
+name:test
 
-     runs-on: ubuntu-latest
-
-    steps:   
-       run: actions/checkout@v3
-
-    - name: Setup 
-       run: actions/setup-dotnet@v2
-    
-    - name: Test
-       run: dotnet test --no-build --verbosity normal
+run on: ubuntu
+       run: test --no-build --verbosity normal
