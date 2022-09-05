@@ -20,7 +20,7 @@ background-color:#555555;}
   <h2>404 - File or directory not found.</h2>
   <h3>The resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.</h3>
  </fieldset></div>
+<br>Just kidding🤪🤪
 </div>
-<br just kidding>
 </body>
 </html>
