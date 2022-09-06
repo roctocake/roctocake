@@ -3,16 +3,15 @@ name: jakel
 on:
  push:
 branch: [ "main" ]
- pull_request: [ "main" ]
 
-   dispatch: 
-    permission:
-    contents: read 
-     id_token: write 
-     metadata: write
-       
+   
+cocurrency dispatch:
+ permission:
+    contents: read
   
-    - name: Setup Pages
+
+    types:
+    - name: Pages
         id: pages
         uses: actions/configure-pages@v2
       - name: Build with Jekyll
