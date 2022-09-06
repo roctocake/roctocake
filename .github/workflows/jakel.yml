@@ -12,7 +12,7 @@ cocurrency dispatch:
 
     types:
     - name: Pages
-        id: pages
+        id: page
         uses: actions/configure-pages@v2
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
