@@ -5,6 +5,12 @@ on:
 branch: [ "main" ]
  pull_request: [ "main" ]
 
+   dispatch: 
+    permission:
+    contents: read 
+     id_token: write 
+     metadata: write
+       
   
     - name: Setup Pages
         id: pages
@@ -12,10 +18,10 @@ branch: [ "main" ]
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-        env:
-          JEKYLL_ENV: production
+       env:
+       - name: Jakel Production
+          env: production
       - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
 
   # Deployment job
